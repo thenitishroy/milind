@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>Westbridge College — Student Portal</title>
-<meta name="description" content="Student login portal for Westbridge College." />
+<title>Ebix College — Student Portal</title>
+<meta name="description" content="Student login portal for Ebix College." />
 <style>
 /* ============================================================
    Design tokens
@@ -523,7 +523,7 @@ html[data-theme="light"] .welcome { background: radial-gradient(90% 80% at 50% 4
           </svg>
         </span>
         <span class="logo-text">
-          <b>Westbridge College</b>
+          <b>Ebix College</b>
           <span>Student Portal</span>
         </span>
       </div>
@@ -647,12 +647,12 @@ html[data-theme="light"] .welcome { background: radial-gradient(90% 80% at 50% 4
 
   /* -------------------------------------------------- Theme */
   const html = document.documentElement;
-  const saved = localStorage.getItem("wb-theme");
+  const saved = localStorage.getItem("ebix-theme");
   if (saved) html.dataset.theme = saved;
   $("themeBtn").addEventListener("click", () => {
     const next = html.dataset.theme === "dark" ? "light" : "dark";
     html.dataset.theme = next;
-    localStorage.setItem("wb-theme", next);
+    localStorage.setItem("ebix-theme", next);
   });
 
   /* -------------------------------------------------- Starfield */
